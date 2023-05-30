@@ -14,8 +14,8 @@ btnCopy.onclick = copyText;
 /*Funcion para obtener el texto de entrada del textarea*/
 function saveText() {
     let msgInp = document.getElementById("message").value;
-     return msgInp;
- }
+    return msgInp;
+}
 /*Ejecuta el encriptado */
 function changeText() {
     hiddenElements();
@@ -46,14 +46,12 @@ function encrypterText(mensaje){
     if(text === ""){
         swal({
             text: "Por favor ingresa un texto",
-            icon: "info",
         });
         showElements(); 
     }
     else if (text.match(simbolos) != null){
         swal({
             text: "Solo letras minúsculas y sin acentos",
-            icon: "error",
         });
         showElements();
         return;
@@ -87,14 +85,12 @@ function desencrypterText(mensaje){
     if(text === ""){
         swal({
             text: "Por favor ingresa un texto",
-            icon: "info",
         });
         showElements();   
     }
     else if (text.match(simbolos) != null){
         swal({
             text: "Solo letras minúsculas y sin acentos",
-            icon: "error",
         });
         showElements();
         return;

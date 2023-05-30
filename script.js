@@ -45,7 +45,7 @@ function encrypterText(mensaje){
     let finalText = "";
     if(text === ""){
         swal({
-            text: "Por favor ingresa un texto Guap@",
+            text: "Por favor ingresa un texto",
             icon: "info",
         });
         showElements(); 
@@ -86,7 +86,7 @@ function desencrypterText(mensaje){
     let finalText = "";
     if(text === ""){
         swal({
-            text: "Por favor ingresa un texto Guap@",
+            text: "Por favor ingresa un texto",
             icon: "info",
         });
         showElements();   
